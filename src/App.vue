@@ -4,7 +4,12 @@ import TheWelcome from './components/TheWelcome.vue'
 import RefCount from './components/RefCount.vue'
 import ReactiveComp from './components/ReactiveComp.vue'
 import ChangColor from './components/ChangColor.vue'
-import ComputedAndMethod from './ComputedAndMethod.vue'
+import ComputedAndMethod from './components/ComputedAndMethod.vue'
+import ShoppingCart from './components/ShoppingCart.vue'
+import TermsAgreement from './components/TermsAgreement.vue'
+import DisableComputed from './components/DisableComputed.vue'
+import VbindStyle from './components/VbindStyle.vue'
+import VbindClass from './components/VbindClass.vue'
 </script>
 
 <template>
@@ -15,9 +20,15 @@ import ComputedAndMethod from './ComputedAndMethod.vue'
       <!-- <HelloWorld msg="I'm Kevin" /> -->
 
       <!-- <RefCount /> -->
-      <ReactiveComp />
+
+      <!-- <ReactiveComp />
       <ChangColor />
       <ComputedAndMethod />
+      <ShoppingCart /> -->
+      <DisableComputed />
+      <TermsAgreement />
+      <VbindStyle />
+      <VbindClass />
     </div>
   </header>
 

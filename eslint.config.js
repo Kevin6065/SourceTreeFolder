@@ -17,6 +17,10 @@ export default defineConfig([
       globals: {
         ...globals.browser,
       },
+      rules: {
+        // 未使用的變數 'off' | 'warn'| 'error'
+        'no-unused-vars': 'warn',
+      },
     },
   },
 
