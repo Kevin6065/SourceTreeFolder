@@ -4,6 +4,7 @@ import TheWelcome from './components/TheWelcome.vue'
 import RefCount from './components/RefCount.vue'
 import ReactiveComp from './components/ReactiveComp.vue'
 import ChangColor from './components/ChangColor.vue'
+import ComputedAndMethod from './ComputedAndMethod.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import ChangColor from './components/ChangColor.vue'
       <!-- <RefCount /> -->
       <ReactiveComp />
       <ChangColor />
+      <ComputedAndMethod />
     </div>
   </header>
 
