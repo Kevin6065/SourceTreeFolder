@@ -10,6 +10,12 @@ import TermsAgreement from './components/TermsAgreement.vue'
 import DisableComputed from './components/DisableComputed.vue'
 import VbindStyle from './components/VbindStyle.vue'
 import VbindClass from './components/VbindClass.vue'
+import VifDemo from './components/VifDemo.vue'
+import ConditionalRendering from './components/ConditionalRendering.vue'
+import VifVshowDiff from './components/VifVshowDiff.vue'
+import ProductList from './components/ProductList.vue'
+import ArrayChangeDetection from './components/ArrayChangeDetection.vue'
+import ProductManager from './components/ProductManager.vue'
 </script>
 
 <template>
@@ -25,10 +31,18 @@ import VbindClass from './components/VbindClass.vue'
       <ChangColor />
       <ComputedAndMethod />
       <ShoppingCart /> -->
-      <DisableComputed />
+      <!-- <DisableComputed />
       <TermsAgreement />
       <VbindStyle />
-      <VbindClass />
+      <VbindClass /> -->
+      <ConditionalRendering />
+      <ArrayChangeDetection />
+
+      <VifDemo />
+
+      <VifVshowDiff />
+      <ProductList />
+      <ProductManager />
     </div>
   </header>
 
