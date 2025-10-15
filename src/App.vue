@@ -16,6 +16,13 @@ import VifVshowDiff from './components/VifVshowDiff.vue'
 import ProductList from './components/ProductList.vue'
 import ArrayChangeDetection from './components/ArrayChangeDetection.vue'
 import ProductManager from './components/ProductManager.vue'
+import VonClick from './components/VonClick.vue'
+import VonInput from './components/VonInput.vue'
+import VonkeyEvent from './components/VonkeyEvent.vue'
+import VmodelDemo2 from './components/VmodelDemo2.vue'
+import OnMounted from './components/OnMounted.vue'
+import OnUnmounted from './components/OnUnmounted.vue'
+import onUpdated from './components/OnUpdated.vue'
 </script>
 
 <template>
@@ -24,30 +31,35 @@ import ProductManager from './components/ProductManager.vue'
 
     <div class="wrapper">
       <!-- <HelloWorld msg="I'm Kevin" /> -->
+    </div>
+  </header>
 
-      <!-- <RefCount /> -->
-
-      <!-- <ReactiveComp />
+  <main>
+    <!-- <TheWelcome /> -->
+    <!-- <RefCount /> -->
+    <!-- <ReactiveComp />
       <ChangColor />
       <ComputedAndMethod />
       <ShoppingCart /> -->
-      <!-- <DisableComputed />
+    <!-- <DisableComputed />
       <TermsAgreement />
       <VbindStyle />
       <VbindClass /> -->
-      <ConditionalRendering />
+    <!-- <ConditionalRendering />
       <ArrayChangeDetection />
 
       <VifDemo />
 
       <VifVshowDiff />
-      <ProductList />
-      <ProductManager />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
+      <ProductList /> -->
+    <!-- <ProductManager /> -->
+    <!-- <VonClick />
+      <VonInput /> -->
+    <!-- <VonkeyEvent /> -->
+    <VmodelDemo2 />
+    <OnMounted />
+    <OnUnmounted />
+    <onUpdated />
   </main>
 </template>
 
