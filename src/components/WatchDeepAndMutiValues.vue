@@ -30,7 +30,7 @@ watch(
 watch(
   () => user.address,
   (newVal) => {
-    console.log('修改 city (無 deep) : ', newVal)
+    console.log('監聽city (有 deep) : ', newVal)
   },
 )
 
@@ -39,7 +39,7 @@ watch(
   (val) => {
     console.log('修改 city (無 deep) : ', val)
   },
-  { deep: true },
+  { immediate: true, deep: true },
 )
 
 watch([() => user.name, () => user.address.city], ([newName, newCity], [OldName, OldCity]) => {

@@ -26,6 +26,7 @@ import onUpdated from './components/OnUpdated.vue'
 import RefComponent from './components/RefComponent.vue'
 import WatchRef from './components/WatchRef.vue'
 import WatchDeepAndMutiValues from './components/WatchDeepAndMutiValues.vue'
+import WatchEffectComp from './components/WatchEffectComp.vue'
 </script>
 
 <template>
@@ -64,8 +65,9 @@ import WatchDeepAndMutiValues from './components/WatchDeepAndMutiValues.vue'
     <OnUnmounted />
     <onUpdated /> -->
     <!-- <RefComponent /> -->
-    <WatchRef />
-    <WatchDeepAndMutiValues />
+    <!-- <WatchRef />
+    <WatchDeepAndMutiValues /> -->
+    <WatchEffectComp />
   </main>
 </template>
 
