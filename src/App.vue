@@ -23,6 +23,7 @@ import VmodelDemo2 from './components/VmodelDemo2.vue'
 import OnMounted from './components/OnMounted.vue'
 import OnUnmounted from './components/OnUnmounted.vue'
 import onUpdated from './components/OnUpdated.vue'
+import RefComponent from './components/RefComponent.vue'
 </script>
 
 <template>
@@ -56,10 +57,11 @@ import onUpdated from './components/OnUpdated.vue'
     <!-- <VonClick />
       <VonInput /> -->
     <!-- <VonkeyEvent /> -->
-    <VmodelDemo2 />
+    <!-- <VmodelDemo2 />
     <OnMounted />
     <OnUnmounted />
-    <onUpdated />
+    <onUpdated /> -->
+    <RefComponent />
   </main>
 </template>
 
