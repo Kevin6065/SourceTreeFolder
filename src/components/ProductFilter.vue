@@ -21,30 +21,39 @@
 <script setup>
 import { ref, watch } from 'vue'
 
-const props = defineProps({
-  category: String,
-  maxPrice: Number,
-  categories: Array,
-})
+// const props = defineProps({
+//   category: String,
+//   maxPrice: Number,
+//   categories: Array,
+// })
 
-const emit = defineEmits(['update:category', 'update:maxPrice', 'reset'])
+// const emit = defineEmits(['update:category', 'update:maxPrice', 'reset'])
 
-const localCategory = ref(props.category)
-const localMaxPrice = ref(props.maxPrice)
+// const localCategory = ref(props.category)
+// const localMaxPrice = ref(props.maxPrice)
+
+const localCategory = defineModel('category')
+const localMaxPrice = defineModel('maxPrice')
+const props = defineModel({ categories: Array })
 
 // 當 local 改變時，通知父層更新 v-model
 watch(localCategory, (val) => emit('update:category', val))
 watch(localMaxPrice, (val) => emit('update:maxPrice', val))
+const emit = defineEmits(['rest'])
 
 // 當父層 props 改變時，更新 local 狀態（確保同步）
-watch(
-  () => props.category,
-  (val) => (localCategory.value = val),
-)
-watch(
-  () => props.maxPrice,
-  (val) => (localMaxPrice.value = val),
-)
+// watch(
+//   () => props.category,
+//   (val) => (localCategory.value = val),
+// )
+// watch(
+//   () => props.maxPrice,
+//   (val) => (localMaxPrice.value = val),
+// )
+
+// 當 local 改變時，通知父層更新 v-model
+// watch(localCategory, (val) => emit('update:category', val))
+// watch(localMaxPrice, (val) => emit('update:maxPrice', val))
 
 function reset() {
   // 通知父層執行重設
