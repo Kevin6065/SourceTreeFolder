@@ -29,6 +29,8 @@ import WatchDeepAndMutiValues from './components/WatchDeepAndMutiValues.vue'
 import WatchEffectComp from './components/WatchEffectComp.vue'
 import TabComponent from './components/TabComponent.vue'
 import RegisterRunDown from './components/RegisterRunDown.vue'
+import PropsComp from './components/PropsComp.vue'
+import ProductPage from './components/ProductPage.vue'
 
 const msgT = "I'm Jerry"
 
@@ -95,6 +97,8 @@ function onDelete() {
     <!-- <TabComponent /> -->
     <!-- <RegisterRunDown /> -->
     <!-- <RegisterRunDown /> -->
+    <PropsComp />
+    <ProductPage />
 
     <button @click="open">開啟AlertBox</button>
 
