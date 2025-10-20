@@ -29,6 +29,28 @@ import WatchDeepAndMutiValues from './components/WatchDeepAndMutiValues.vue'
 import WatchEffectComp from './components/WatchEffectComp.vue'
 import TabComponent from './components/TabComponent.vue'
 import RegisterRunDown from './components/RegisterRunDown.vue'
+
+const msgT = "I'm Jerry"
+
+import { ref } from 'vue'
+
+const show = ref(false)
+
+function open() {
+  show.value = true
+}
+
+const btns = [
+  { text: '取消', color: 'secondary', onClick: () => onCancel() },
+  { text: '確認刪除', color: 'danger', onClick: () => onDelete() },
+]
+
+function onCancel() {
+  console.log('使用者取消了')
+}
+function onDelete() {
+  console.log('刪除成功')
+}
 </script>
 
 <template>
@@ -71,7 +93,19 @@ import RegisterRunDown from './components/RegisterRunDown.vue'
     <WatchDeepAndMutiValues /> -->
     <!-- <WatchEffectComp /> -->
     <!-- <TabComponent /> -->
-    <RegisterRunDown />
+    <!-- <RegisterRunDown /> -->
+    <!-- <RegisterRunDown /> -->
+
+    <button @click="open">開啟AlertBox</button>
+
+    <AlertBox
+      v-model:visible="show"
+      :title="'刪除確認'"
+      :message="'確定要刪除這筆資料嗎？'"
+      :buttons="btns"
+      :size="'large'"
+      :autoClose="false"
+    />
   </main>
 </template>
 
