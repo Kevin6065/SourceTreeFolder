@@ -31,10 +31,17 @@ import TabComponent from './components/TabComponent.vue'
 import RegisterRunDown from './components/RegisterRunDown.vue'
 import PropsComp from './components/PropsComp.vue'
 import ProductPage from './components/ProductPage.vue'
+import FancyButton from './components/FancyButton.vue'
+import BaseLayout from './components/BaseLayout.vue'
+import TabBar from './components/slot/TabBar.vue'
+import TabBarP from './components/slot/TabBarP.vue'
+import UserData from './components/slot/UserData.vue'
+import ProvideInjectRef from './components/components/ProvideInjectRef.vue'
 
 const msgT = "I'm Jerry"
 
 import { ref } from 'vue'
+// import UserData from './components/UserData.vue'
 
 const show = ref(false)
 
@@ -97,10 +104,19 @@ function onDelete() {
     <!-- <TabComponent /> -->
     <!-- <RegisterRunDown /> -->
     <!-- <RegisterRunDown /> -->
-    <PropsComp />
-    <ProductPage />
+    <!-- <PropsComp />
+    <ProductPage /> -->
+    <!-- <FancyButton />
+    <BaseLayout /> -->
+    <!-- <TabBar />
+    <TabBarP /> -->
+    <!-- <UserData /> -->
+    <!-- <ProvideInjectRef /> -->
+    {{ $formatPrice(1000, 3) }}<br />
+    {{ new Date() }}<br />
+    {{ $formatDate(new Date()) }}
 
-    <button @click="open">開啟AlertBox</button>
+    <!-- <button @click="open">開啟AlertBox</button>
 
     <AlertBox
       v-model:visible="show"
@@ -109,7 +125,21 @@ function onDelete() {
       :buttons="btns"
       :size="'large'"
       :autoClose="false"
-    />
+    /> -->
+    <!-- <FancyButton><template v-slot:default> click me</template></FancyButton>
+    <FancyButton><template #default> click me</template></FancyButton>
+    <FancyButton>click me</FancyButton> -->
+
+    <!-- <BaseLayout>
+      <template #header><h1>Here might be a page title</h1></template>
+      <template #default>
+        <p>A paragraph for the main content.</p>
+        <p>And another one.</p>
+      </template>
+      <template #footer><p>Here's some contact info</p></template>
+    </BaseLayout> -->
+
+    <!-- 三種寫法表示的東西是一樣的 -->
   </main>
 </template>
 
