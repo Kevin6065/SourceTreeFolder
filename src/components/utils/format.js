@@ -37,5 +37,6 @@ function formatDate(date, style) {
       return moment(date).format('YYYY-MM-DD')
   }
 }
-
+const format = { formatPrice, formatDate }
 export { formatPrice, formatDate }
+export default format

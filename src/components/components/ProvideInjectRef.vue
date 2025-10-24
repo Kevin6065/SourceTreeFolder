@@ -16,7 +16,7 @@ import LanguageSwitcher from './LanguageSwitcher.vue'
 import ContextUser from './ContextUser.vue'
 
 const context = createAppContext() //帶入 reactive 狀態
-provide(AppContextKey, context) //使用symbol key 將 context往下傳
+// provide(AppContextKey, context) //使用symbol key 將 context往下傳
 </script>
 
 <style scoped>

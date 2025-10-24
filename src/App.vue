@@ -37,11 +37,15 @@ import TabBar from './components/slot/TabBar.vue'
 import TabBarP from './components/slot/TabBarP.vue'
 import UserData from './components/slot/UserData.vue'
 import ProvideInjectRef from './components/components/ProvideInjectRef.vue'
+import useFormat from './components/composables/useformat'
+import TopBar from './components/TopBar.vue'
 
 const msgT = "I'm Jerry"
 
-import { ref } from 'vue'
 // import UserData from './components/UserData.vue'
+import { ref, getCurrentInstance } from 'vue'
+const { appContext } = getCurrentInstance()
+console.log('🚀 ~ appContext:', appContext)
 
 const show = ref(false)
 
@@ -60,6 +64,11 @@ function onCancel() {
 function onDelete() {
   console.log('刪除成功')
 }
+
+const price = useFormat().$fmPrice(1000, 3)
+// console.log('🚀 ~ price:', price)
+const date = useFormat().$formatDate(new Date())
+// console.log('🚀 ~ date:', date)
 </script>
 
 <template>
@@ -112,9 +121,9 @@ function onDelete() {
     <TabBarP /> -->
     <!-- <UserData /> -->
     <!-- <ProvideInjectRef /> -->
-    {{ $formatPrice(1000, 3) }}<br />
+    <!-- {{ $formatPrice(1000, 3) }}<br />
     {{ new Date() }}<br />
-    {{ $formatDate(new Date()) }}
+    {{ $formatDate(new Date()) }} -->
 
     <!-- <button @click="open">開啟AlertBox</button>
 
@@ -140,6 +149,10 @@ function onDelete() {
     </BaseLayout> -->
 
     <!-- 三種寫法表示的東西是一樣的 -->
+
+    <h1>我的網站</h1>
+    <TopBar />
+    <router-view />
   </main>
 </template>
 
