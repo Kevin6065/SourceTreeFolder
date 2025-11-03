@@ -39,6 +39,7 @@ import UserData from './components/slot/UserData.vue'
 import ProvideInjectRef from './components/components/ProvideInjectRef.vue'
 import useFormat from './components/composables/useformat'
 import TopBar from './components/TopBar.vue'
+import AxiosComp from './components/AxiosComp.vue'
 
 const msgT = "I'm Jerry"
 
@@ -153,6 +154,7 @@ const date = useFormat().$formatDate(new Date())
     <h1>我的網站</h1>
     <TopBar />
     <router-view />
+    <AxiosComp />
   </main>
 </template>
 
