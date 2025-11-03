@@ -154,7 +154,6 @@ const date = useFormat().$formatDate(new Date())
     <h1>我的網站</h1>
     <TopBar />
     <router-view />
-    <AxiosComp />
   </main>
 </template>
 

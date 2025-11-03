@@ -26,6 +26,11 @@ const routes = [
     name: 'UserDetail',
     component: () => import('@/views/UserDetail.vue'),
   },
+  {
+    path: '/axios',
+    name: 'AxiosComp',
+    component: () => import('@/components/AxiosComp.vue'),
+  },
 ]
 
 const router = createRouter({
